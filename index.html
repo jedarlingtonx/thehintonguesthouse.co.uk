@@ -18,9 +18,23 @@ a{color:#8E3B2C}a:hover{color:#5F2418}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1F4E79;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (max-width:640px){h1{font-size:42px !important}h2{font-size:32px !important}}
-@media (max-width:1100px){.hero-band{display:flex;flex-direction:column}.hero-band section{width:100%;padding-bottom:40px !important}.hero-band section>div{padding:16px 0 !important}.hero-img{order:2;position:static !important;width:100% !important;-webkit-mask-image:none !important;mask-image:none !important;padding:0 32px 64px}.hero-img img{height:auto !important;aspect-ratio:1000/834;border-radius:6px 120px 6px 6px !important}}
+@media (max-width:1100px){
+.hero-band section{padding-bottom:300px !important}
+.hero-band section>div{padding:16px 0 !important}
+.hero-img{top:auto !important;height:360px;width:100% !important;-webkit-mask-image:none !important;mask-image:none !important}
+.hero-img img{object-position:60% center !important}
+.hero-img::after{height:100% !important;background:linear-gradient(to bottom,#FAF6EE 0,rgba(250,246,238,.7) 30%,rgba(250,246,238,0) 65%) !important}
+}
+.burger{display:none;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid #D9CEB8;border-radius:10px;background:#FFFFFF;color:#1C2733;cursor:pointer}
+@media (max-width:760px){
+header{padding:14px 20px !important}
+.burger{display:flex}
+#nav{display:none !important;width:100%;flex-direction:column;align-items:stretch !important;gap:0 !important}
+#nav.open{display:flex !important}
+#nav a{padding:14px 4px !important;border-bottom:1px solid #E4DAC6;font-size:17px}
+#nav a:last-child{border-bottom:0;margin-top:12px;text-align:center;padding:14px 22px !important}
+}
 .hero-img::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,#FAF6EE,rgba(250,246,238,0))}
-@media (max-width:1100px){.hero-img::after{display:none}}
 .hero-img{-webkit-mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.35) 18%,#000 48%);mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.35) 18%,#000 48%)}
 @media (max-width:640px){
 .stat{border-right:0 !important;border-bottom:1px solid #E4DAC6;padding:20px 8px !important}.stat:last-child{border-bottom:0}
@@ -48,7 +62,8 @@ footer nav a,footer address+p a{padding:12px 0 !important}
 <span style="font-family:'Fraunces',Georgia,serif;font-size:28px;font-weight:600;letter-spacing:-0.01em">The Hinton</span>
 <span style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#5A6673;margin-top:4px">Guest House &middot; Mobberley</span>
 </a>
-<nav aria-label="Main" style="display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center;font-size:16px">
+<button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav id="nav" aria-label="Main" style="display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center;font-size:16px">
 <a href="#rooms" style="color:#1C2733;text-decoration:none;padding:10px 0">Rooms</a>
 <a href="#garden" style="color:#1C2733;text-decoration:none;padding:10px 0">Garden and lounge</a>
 <a href="#breakfast" style="color:#1C2733;text-decoration:none;padding:10px 0">Breakfast</a>
@@ -102,7 +117,7 @@ footer nav a,footer address+p a{padding:12px 0 !important}
 <option value="2">2 children</option>
 </select>
 </div>
-<button type="submit" style="font:inherit;cursor:pointer;border:0;background:#1F4E79;color:#FFFFFF;font-weight:700;text-align:center;padding:14px 20px;border-radius:8px;min-height:48px;font-size:16px">Check availability</button>
+<button type="submit" style="grid-column:1/-1;font:inherit;cursor:pointer;border:0;background:#1F4E79;color:#FFFFFF;font-weight:700;text-align:center;padding:14px 20px;border-radius:8px;min-height:48px;font-size:16px">Check availability</button>
 </form>
 <script>
 (function(){
@@ -117,6 +132,16 @@ if(d.value&&d.value<d.min)d.value=d.min;
 }
 a.addEventListener('change',function(){sync();if(a.value&&!d.value){d.value=d.min}});
 sync();
+})();
+</script>
+<script>
+(function(){
+var b=document.querySelector('.burger'),n=document.getElementById('nav');
+if(!b||!n)return;
+function set(o){n.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false')}
+b.addEventListener('click',function(){set(!n.classList.contains('open'))});
+n.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
 })();
 </script>
 </section>
