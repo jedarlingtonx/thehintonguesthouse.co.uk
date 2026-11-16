@@ -67,6 +67,7 @@ footer>div:last-child>div{padding:18px 24px 22px !important;gap:6px !important}
 .bf-img img{height:320px !important;min-height:0 !important}
 .bf-text>dl{order:5}
 }
+@media (min-width:641px){.avail{width:fit-content !important;max-width:100% !important;grid-template-columns:repeat(4,minmax(0,200px)) !important}}
 </style>
 </head>
 <body>
@@ -112,7 +113,7 @@ footer>div:last-child>div{padding:18px 24px 22px !important;gap:6px !important}
 
 <!-- Availability bar -->
 <section aria-label="Check availability" style="max-width:1280px;margin:-44px auto 0;padding:0 32px;position:relative">
-<form action="https://www.thehintonguesthouse.co.uk/rooms" method="get" target="_blank" style="background:#FFFFFF;border:1px solid #E4DAC6;border-radius:14px;box-shadow:0 18px 40px -22px rgba(31,43,36,0.35);padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:16px;align-items:end;max-width:1000px">
+<form class="avail" action="https://www.thehintonguesthouse.co.uk/rooms" method="get" target="_blank" style="background:#FFFFFF;border:1px solid #E4DAC6;border-radius:14px;box-shadow:0 18px 40px -22px rgba(31,43,36,0.35);padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:16px;align-items:end;max-width:1000px">
 <input type="hidden" name="noofrooms" value="1">
 <input type="hidden" name="pce" value="">
 <div style="display:flex;flex-direction:column;gap:6px">
