@@ -41,6 +41,17 @@ header{padding:14px 20px !important;gap:8px 12px !important}
 }
 .hero-img::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,#FAF6EE,rgba(250,246,238,0))}
 .hero-img{-webkit-mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.35) 18%,#000 48%);mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.35) 18%,#000 48%)}
+@media (min-width:1101px){
+.hero-band{background:#0E1B2B}
+.hero-img{width:100% !important;-webkit-mask-image:none !important;mask-image:none !important}
+.hero-img img{object-position:50% 55% !important}
+.hero-img::after{height:auto !important;top:0;background:linear-gradient(to right,rgba(14,27,43,.92) 0,rgba(14,27,43,.8) 34%,rgba(14,27,43,.2) 66%,rgba(14,27,43,0) 100%) !important}
+.hero-band section{padding-bottom:96px !important}
+.hero-band h1{color:#FFFFFF !important}
+.hero-band section p{color:#E6ECF3 !important}
+.hero-band section span{color:#E3C48A !important}
+.hero-band section a{background:#FFFFFF !important;border-color:#FFFFFF !important}
+}
 @media (max-width:640px){
 h1,h2,p{text-wrap:wrap !important}
 .hero-band section>div:first-child{width:calc(100% - 24px) !important;padding:24px 22px !important}
