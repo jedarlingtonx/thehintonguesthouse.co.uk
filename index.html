@@ -24,7 +24,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <div style="background:#FAF6EE;color:#1C2733;font-family:'DM Sans',system-ui,sans-serif;font-size:17px;line-height:1.6">
 
 <!-- Pixel North concept ribbon -->
-<div style="background:#5B21E6;color:#FFFFFF;padding:10px 24px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;align-items:center;font-size:14px;line-height:1.4">
+<div style="background:#1F4E79;color:#FFFFFF;padding:10px 24px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;align-items:center;font-size:14px;line-height:1.4">
 <strong style="font-weight:700">Concept home page by Pixel North</strong>
 <span>Designed for The Hinton Guest House, using your current website's words, photos and reviews. Not a live website.</span>
 </div>
@@ -41,53 +41,76 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <a href="#breakfast" style="color:#1C2733;text-decoration:none;padding:10px 0">Breakfast</a>
 <a href="#reviews" style="color:#1C2733;text-decoration:none;padding:10px 0">Reviews</a>
 <a href="#find-us" style="color:#1C2733;text-decoration:none;padding:10px 0">Find us</a>
-<a href="tel:+441565873484" style="color:#1C2733;text-decoration:none;font-weight:700;padding:10px 0">01565 873 484</a>
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="background:#1F4E79;color:#FFFFFF;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;min-height:20px">Check availability</a>
+<a href="https://www.thehintonguesthouse.co.uk/rooms" target="_blank" rel="noopener" style="background:#1F4E79;color:#FFFFFF;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;min-height:20px">Check availability</a>
 </nav>
 </header>
 
 <!-- Hero -->
 <section id="top" style="max-width:1280px;margin:0 auto;padding:24px 32px 76px;display:flex;flex-wrap:wrap;gap:40px;align-items:center">
 <div style="flex:1 1 440px;min-width:0;padding:16px 0">
-<p style="margin:0 0 18px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Bed and breakfast in Mobberley, Cheshire</p>
 <h1 style="margin:0 0 22px;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:62px;line-height:1.04;letter-spacing:-0.02em;text-wrap:balance">Your home from home, in the heart of Cheshire.</h1>
 <p style="margin:0 0 32px;font-size:20px;line-height:1.55;color:#3B4856;max-width:520px;text-wrap:pretty">A spotlessly clean guest house in its own grounds, with a garden to sit out in and a proper breakfast to set you up. Close to Knutsford, with Manchester, the Airport and Chester all within easy reach.</p>
 <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="background:#1F4E79;color:#FFFFFF;text-decoration:none;font-weight:700;padding:16px 30px;border-radius:999px;font-size:17px">Check availability</a>
-<a href="tel:+441565873484" style="color:#1C2733;font-weight:700;text-decoration:none;padding:16px 8px;font-size:17px">or call Ann on 01565 873 484</a>
+<a href="https://www.thehintonguesthouse.co.uk/rooms" target="_blank" rel="noopener" style="background:#1F4E79;color:#FFFFFF;text-decoration:none;font-weight:700;padding:16px 30px;border-radius:999px;font-size:17px">Check availability</a>
+<a href="tel:+441565873484" style="background:#FFFFFF;color:#1F4E79;border:2px solid #1F4E79;font-weight:700;text-decoration:none;padding:14px 28px;border-radius:999px;font-size:17px">or call Ann on 01565 873 484</a>
 </div>
 </div>
 <div style="flex:1 1 440px;min-width:0">
-<img fetchpriority="high" width="1024" height="487" src="images/hero-front-of-house.jpg" alt="The front of The Hinton Guest House, a brick and white house set among mature trees, with parking to the front" style="display:block;width:100%;height:440px;object-fit:cover;object-position:85% center;border-radius:6px 160px 6px 6px;background:#E8DFCE">
+<img fetchpriority="high" width="1000" height="834" src="images/hero-front-of-house.jpg" alt="The front of The Hinton Guest House, a brick and white house set among mature trees, with parking to the front" style="display:block;width:100%;height:auto;aspect-ratio:1000/834;object-fit:cover;border-radius:6px 160px 6px 6px;background:#E8DFCE">
 </div>
 </section>
 
 <!-- Availability bar -->
 <section aria-label="Check availability" style="max-width:1280px;margin:-44px auto 0;padding:0 32px;position:relative">
-<form action="https://www.thehintonguesthouse.co.uk/rooms" method="get" style="background:#FFFFFF;border:1px solid #E4DAC6;border-radius:14px;box-shadow:0 18px 40px -22px rgba(31,43,36,0.35);padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:16px;align-items:end;max-width:960px">
+<form action="https://www.thehintonguesthouse.co.uk/rooms" method="get" target="_blank" style="background:#FFFFFF;border:1px solid #E4DAC6;border-radius:14px;box-shadow:0 18px 40px -22px rgba(31,43,36,0.35);padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:16px;align-items:end;max-width:1000px">
+<input type="hidden" name="noofrooms" value="1">
+<input type="hidden" name="pce" value="">
 <div style="display:flex;flex-direction:column;gap:6px">
 <label for="arrive" style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A6673">Arrive</label>
-<input id="arrive" type="date" style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
+<input id="arrive" name="startDate" type="date" required style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
 </div>
 <div style="display:flex;flex-direction:column;gap:6px">
 <label for="depart" style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A6673">Depart</label>
-<input id="depart" type="date" style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
+<input id="depart" name="endDate" type="date" required style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
 </div>
 <div style="display:flex;flex-direction:column;gap:6px">
-<label for="guests" style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A6673">Guests</label>
-<select id="guests" style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
-<option>2 adults</option>
-<option>1 adult</option>
-<option>2 adults, 1 child</option>
-<option>3 adults</option>
+<label for="adults" style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A6673">Adults</label>
+<select id="adults" name="adults1" style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
+<option value="1">1 adult</option>
+<option value="2" selected>2 adults</option>
+<option value="3">3 adults</option>
 </select>
 </div>
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="background:#1F4E79;color:#FFFFFF;text-decoration:none;font-weight:700;text-align:center;padding:14px 20px;border-radius:8px;min-height:20px;font-size:16px">See rooms and rates</a>
+<div style="display:flex;flex-direction:column;gap:6px">
+<label for="children" style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A6673">Children</label>
+<select id="children" name="children1" style="font:inherit;font-size:16px;min-height:48px;box-sizing:border-box;padding:0 12px;border:1px solid #B9AE98;border-radius:8px;background:#FFFFFF;color:#1C2733">
+<option value="0" selected>No children</option>
+<option value="1">1 child</option>
+<option value="2">2 children</option>
+</select>
+</div>
+<button type="submit" style="font:inherit;cursor:pointer;border:0;background:#1F4E79;color:#FFFFFF;font-weight:700;text-align:center;padding:14px 20px;border-radius:8px;min-height:48px;font-size:16px">See rooms and rates</button>
 </form>
+<script>
+(function(){
+var a=document.getElementById('arrive'),d=document.getElementById('depart');
+function iso(t){return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')}
+var today=new Date();a.min=iso(today);
+function sync(){
+var base=a.value?new Date(a.value+'T12:00:00'):today;
+var next=new Date(base);next.setDate(next.getDate()+1);
+d.min=iso(next);
+if(d.value&&d.value<d.min)d.value=d.min;
+}
+a.addEventListener('change',function(){sync();if(a.value&&!d.value){d.value=d.min}});
+sync();
+})();
+</script>
 </section>
 
 <!-- Proof strip -->
-<section aria-label="Guest ratings and awards" style="max-width:1280px;margin:56px auto 0;padding:0 32px">
+<div style="background:#FFFFFF;margin-top:56px;border-top:1px solid #E4DAC6;border-bottom:1px solid #E4DAC6">
+<section aria-label="Guest ratings and awards" style="max-width:1280px;margin:0 auto;padding:40px 32px">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:0;border-top:1px solid #D9CEB8;border-bottom:1px solid #D9CEB8">
 <div style="padding:26px 24px;border-right:1px solid #E4DAC6">
 <div style="font-family:'Fraunces',Georgia,serif;font-size:44px;line-height:1;color:#8E3B2C">4.9<span style="font-size:22px;color:#5A6673"> / 5</span></div>
@@ -102,14 +125,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <div style="margin-top:8px;font-size:15px;color:#3B4856">a TripAdvisor Travellers' Choice winner since 2014</div>
 </div>
 <div style="padding:26px 24px">
-<div style="font-family:'Fraunces',Georgia,serif;font-size:44px;line-height:1;color:#8E3B2C">AA</div>
-<div style="margin-top:8px;font-size:15px;color:#3B4856">four-star rated guest house</div>
+<div role="img" aria-label="Four stars" style="display:flex;gap:4px;height:44px;align-items:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+<div style="margin-top:8px;font-size:15px;color:#3B4856">AA four-star rated guest house</div>
 </div>
 </div>
 </section>
+</div>
 
 <!-- Welcome -->
-<section style="max-width:1280px;margin:0 auto;padding:96px 32px 24px;display:flex;flex-wrap:wrap;gap:56px 72px;align-items:flex-start">
+<div style="background:#FAF6EE">
+<section style="max-width:1280px;margin:0 auto;padding:96px 32px 96px;display:flex;flex-wrap:wrap;gap:56px 72px;align-items:flex-start">
 <div style="flex:1 1 420px;min-width:0">
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Welcome to The Hinton</p>
 <h2 style="margin:0 0 22px;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-0.015em;text-wrap:balance">Built in the early 1900s, looked after with real care.</h2>
@@ -117,31 +142,33 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <p style="margin:0;text-wrap:pretty;color:#3B4856">Our guests tell us it is spotlessly clean, that Ann and the team make them feel welcome, and that the little extras make the difference. Come for a night on the way through, or stay a week and explore.</p>
 </div>
 <div style="flex:1 1 480px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:28px 32px">
-<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border:1px solid #E4DAC6;border-radius:12px;padding:26px 26px 28px;box-shadow:0 14px 30px -22px rgba(20,40,63,0.45)">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7M3 14h18M3 18v2M21 18v2M7 9V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2"/></svg>
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px">Comfortable, en-suite rooms</h3>
 <p style="margin:0;font-size:16px;color:#3B4856">Every room has its own bathroom, a Freeview TV and free Wi-Fi, with housekeeping every day.</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border:1px solid #E4DAC6;border-radius:12px;padding:26px 26px 28px;box-shadow:0 14px 30px -22px rgba(20,40,63,0.45)">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9zM16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3v3M12 3v3"/></svg>
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px">Breakfast, your way</h3>
 <p style="margin:0;font-size:16px;color:#3B4856">Cooked, continental or healthy, with vegetarian, vegan and gluten-free choices.</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border:1px solid #E4DAC6;border-radius:12px;padding:26px 26px 28px;box-shadow:0 14px 30px -22px rgba(20,40,63,0.45)">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 16V8h3a2.5 2.5 0 0 1 0 5h-3"/></svg>
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px">Free parking, on site</h3>
 <p style="margin:0;font-size:16px;color:#3B4856">Park at the front of the house, with a lock-up for bikes.</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border:1px solid #E4DAC6;border-radius:12px;padding:26px 26px 28px;box-shadow:0 14px 30px -22px rgba(20,40,63,0.45)">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10l-1 6a4 4 0 0 1-8 0L7 4zM12 14v6M9 20h6"/></svg>
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px">A drink in the lounge or garden</h3>
 <p style="margin:0;font-size:16px;color:#3B4856">We hold an alcohol licence, so you can unwind after a day's work or touring.</p>
 </div>
 </div>
 </section>
+</div>
 
 <!-- Rooms -->
-<section id="rooms" style="max-width:1280px;margin:0 auto;padding:88px 32px 24px">
+<div style="background:#F1E9DA">
+<section id="rooms" style="max-width:1280px;margin:0 auto;padding:88px 32px 96px">
 <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:36px">
 <div style="flex:1 1 420px">
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Rooms</p>
@@ -157,7 +184,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px">Double room</h3>
 <p style="margin:0;font-size:15px;color:#5A6673">Sleeps 2 &middot; En-suite shower room</p>
 <p style="margin:0;font-size:16px;color:#3B4856;flex:1">A comfortable double bed with extra pillows and a throw, a desk and chair, and a tea and coffee tray. Some rooms look out over the back garden.</p>
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="font-weight:700;color:#8E3B2C;padding:10px 0;display:inline-block">Check availability &rarr;</a>
+<a href="https://www.thehintonguesthouse.co.uk/rooms" target="_blank" rel="noopener" style="font-weight:700;color:#8E3B2C;padding:10px 0;display:inline-block">Check availability &rarr;</a>
 </div>
 </article>
 
@@ -167,7 +194,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px">Twin or Super King</h3>
 <p style="margin:0;font-size:15px;color:#5A6673">Sleeps 2 &middot; En-suite bath and shower</p>
 <p style="margin:0;font-size:16px;color:#3B4856;flex:1">Choose two single beds or one Super King, set up for your stay. Dressing gowns and slippers, a desk, and a garden view from the back of the house.</p>
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="font-weight:700;color:#8E3B2C;padding:10px 0;display:inline-block">Check availability &rarr;</a>
+<a href="https://www.thehintonguesthouse.co.uk/rooms" target="_blank" rel="noopener" style="font-weight:700;color:#8E3B2C;padding:10px 0;display:inline-block">Check availability &rarr;</a>
 </div>
 </article>
 
@@ -177,15 +204,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <h3 style="margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px">Family Suite</h3>
 <p style="margin:0;font-size:15px;color:#5A6673">Sleeps 3 &middot; Two bedrooms, private bathroom</p>
 <p style="margin:0;font-size:16px;color:#3B4856;flex:1">A double bedroom plus a second room with twin or single beds, a bath and shower, and grab rails. Highchairs, a baby listener and a children's menu are available.</p>
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="font-weight:700;color:#8E3B2C;padding:10px 0;display:inline-block">Check availability &rarr;</a>
+<a href="https://www.thehintonguesthouse.co.uk/rooms" target="_blank" rel="noopener" style="font-weight:700;color:#8E3B2C;padding:10px 0;display:inline-block">Check availability &rarr;</a>
 </div>
 </article>
 
 </div>
 </section>
+</div>
 
 <!-- Garden and lounge -->
-<section id="garden" style="max-width:1280px;margin:0 auto;padding:88px 32px 24px">
+<div style="background:#FFFFFF">
+<section id="garden" style="max-width:1280px;margin:0 auto;padding:88px 32px 96px">
 <div style="max-width:640px;margin-bottom:36px">
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Garden and lounge</p>
 <h2 style="margin:0 0 18px;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-0.015em;text-wrap:balance">Somewhere lovely to sit out, or settle in.</h2>
@@ -201,9 +230,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 </div>
 </div>
 </section>
+</div>
 
 <!-- Breakfast and good to know -->
-<section id="breakfast" style="max-width:1280px;margin:0 auto;padding:88px 32px 24px;display:flex;flex-wrap:wrap;gap:48px;align-items:stretch">
+<div style="background:#FAF6EE">
+<section id="breakfast" style="max-width:1280px;margin:0 auto;padding:88px 32px 96px;display:flex;flex-wrap:wrap;gap:48px;align-items:stretch">
 <div style="flex:1 1 440px;min-width:0">
 <img loading="lazy" decoding="async" width="1024" height="768" src="images/breakfast-room.jpg" alt="The breakfast room, with tables laid with blue gingham cloths" style="display:block;width:100%;height:100%;min-height:380px;object-fit:cover;border-radius:8px;background:#E8DFCE">
 </div>
@@ -217,21 +248,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 </dl>
 </div>
 </section>
+</div>
 
-<section aria-label="Good to know" style="max-width:1280px;margin:0 auto;padding:56px 32px 24px">
-<div style="background:#F1E9DA;border-radius:12px;padding:40px 40px 44px">
+<div style="background:#E3ECF4">
+<section aria-label="Good to know" style="max-width:1280px;margin:0 auto;padding:80px 32px 88px">
+<div style="background:#FFFFFF;border:1px solid #C9D7E5;border-radius:12px;padding:40px 40px 44px">
 <h2 style="margin:0 0 28px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:28px">Good to know before you arrive</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:28px 36px">
-<div><h3 style="margin:0 0 6px;font-size:16px;font-weight:700">Check-in</h3><p style="margin:0;font-size:16px;color:#3B4856">4pm to 9pm. Early check-in can be arranged, but we are sorry that we cannot offer late arrivals.</p></div>
-<div><h3 style="margin:0 0 6px;font-size:16px;font-weight:700">Check-out</h3><p style="margin:0;font-size:16px;color:#3B4856">By 10:30am. Late check-out can be arranged if you ask us.</p></div>
-<div><h3 style="margin:0 0 6px;font-size:16px;font-weight:700">Stairs</h3><p style="margin:0;font-size:16px;color:#3B4856">There are no ground-floor guest bedrooms. All rooms are reached by a single flight of stairs.</p></div>
-<div><h3 style="margin:0 0 6px;font-size:16px;font-weight:700">Parking and Wi-Fi</h3><p style="margin:0;font-size:16px;color:#3B4856">Free on-site parking, including long stays, and free high-speed Wi-Fi.</p></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3 style="margin:0 0 6px;font-size:17px;font-weight:700">Check-in</h3><p style="margin:0;font-size:16px;color:#3B4856">4pm to 9pm. Early check-in can be arranged, but we are sorry that we cannot offer late arrivals.</p></div></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg><div><h3 style="margin:0 0 6px;font-size:17px;font-weight:700">Check-out</h3><p style="margin:0;font-size:16px;color:#3B4856">By 10:30am. Late check-out can be arranged if you ask us.</p></div></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M3 20h4v-4h4v-4h4V8h4V4"/></svg><div><h3 style="margin:0 0 6px;font-size:17px;font-weight:700">Stairs</h3><p style="margin:0;font-size:16px;color:#3B4856">There are no ground-floor guest bedrooms. All rooms are reached by a single flight of stairs.</p></div></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M5 12l1.6-4.4A2 2 0 0 1 8.5 6h7a2 2 0 0 1 1.9 1.6L19 12M4 12h16v5H4zM7 17v2M17 17v2"/><circle cx="8" cy="14.5" r=".6"/><circle cx="16" cy="14.5" r=".6"/></svg><div><h3 style="margin:0 0 6px;font-size:17px;font-weight:700">Parking and Wi-Fi</h3><p style="margin:0;font-size:16px;color:#3B4856">Free on-site parking, including long stays, and free high-speed Wi-Fi.</p></div></div>
 </div>
 </div>
 </section>
+</div>
 
 <!-- Reviews -->
-<section id="reviews" style="margin-top:72px;background:#14283F;color:#FAF6EE">
+<section id="reviews" style="background:#14283F;color:#FAF6EE">
 <div style="max-width:1280px;margin:0 auto;padding:88px 32px;display:flex;flex-wrap:wrap;gap:56px 80px;align-items:flex-start">
 <div style="flex:1 1 400px;min-width:0">
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#E3C48A">What our guests say</p>
@@ -240,7 +274,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 <blockquote style="margin:0;font-family:'Fraunces',Georgia,serif;font-size:26px;line-height:1.35;color:#FAF6EE">&ldquo;Ann was friendly and a pleasure to stay with.&rdquo;</blockquote>
 <figcaption style="margin-top:12px;font-size:15px;color:#D7CFBF">Guest review, September 2026</figcaption>
 </figure>
-<a href="https://www.thehintonguesthouse.co.uk/reviews" style="display:inline-block;background:#FAF6EE;color:#1C2733;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:999px">Read all 261 reviews</a>
+<a href="https://www.thehintonguesthouse.co.uk/reviews" target="_blank" rel="noopener" style="display:inline-block;background:#FAF6EE;color:#1C2733;font-weight:700;text-decoration:none;padding:14px 26px;border-radius:999px">Read all 261 reviews</a>
 </div>
 <div style="flex:1 1 400px;min-width:0">
 <h3 style="margin:0 0 20px;font-size:15px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;color:#E3C48A">Guest scores out of 5</h3>
@@ -259,7 +293,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 </section>
 
 <!-- Find us -->
-<section id="find-us" style="max-width:1280px;margin:0 auto;padding:88px 32px 24px;display:flex;flex-wrap:wrap;gap:48px;align-items:stretch">
+<div style="background:#FAF6EE">
+<section id="find-us" style="max-width:1280px;margin:0 auto;padding:88px 32px 96px;display:flex;flex-wrap:wrap;gap:48px;align-items:stretch">
 <div style="flex:1 1 400px;min-width:0">
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Find us</p>
 <h2 style="margin:0 0 22px;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-0.015em;text-wrap:balance">A village base for Cheshire and beyond.</h2>
@@ -288,9 +323,10 @@ Cheshire WA16 7HH
 <p style="margin:0;font-size:14px;color:#4C5865">Interactive map goes here on the live site.</p>
 </div>
 </section>
+</div>
 
 <!-- Footer -->
-<footer style="margin-top:72px;background:#0E1B2B;color:#D7CFBF">
+<footer style="background:#0E1B2B;color:#D7CFBF">
 <div style="max-width:1280px;margin:0 auto;padding:56px 32px 40px;display:flex;flex-wrap:wrap;gap:32px 64px;justify-content:space-between">
 <div style="flex:1 1 300px">
 <div style="font-family:'Fraunces',Georgia,serif;font-size:26px;font-weight:600;color:#FAF6EE">The Hinton</div>
@@ -298,16 +334,16 @@ Cheshire WA16 7HH
 <p style="margin:18px 0 0;font-size:15px;max-width:340px">A warm welcome is guaranteed from the Hinton team.</p>
 </div>
 <nav aria-label="Footer" style="display:flex;flex-wrap:wrap;gap:4px 28px;align-items:flex-start;font-size:15px">
-<a href="https://www.thehintonguesthouse.co.uk/rooms" style="color:#FAF6EE;padding:8px 0">Rooms</a>
-<a href="https://www.thehintonguesthouse.co.uk/reviews" style="color:#FAF6EE;padding:8px 0">Reviews</a>
-<a href="https://www.thehintonguesthouse.co.uk/guest/secure?channelReference=myweb" style="color:#FAF6EE;padding:8px 0">My booking</a>
-<a href="https://www.thehintonguesthouse.co.uk/en-GB/privacy_policy/TheHinton_WA167HH" style="color:#FAF6EE;padding:8px 0">Privacy and cookies</a>
+<a href="https://www.thehintonguesthouse.co.uk/rooms" target="_blank" rel="noopener" style="color:#FAF6EE;padding:8px 0">Rooms</a>
+<a href="https://www.thehintonguesthouse.co.uk/reviews" target="_blank" rel="noopener" style="color:#FAF6EE;padding:8px 0">Reviews</a>
+<a href="https://www.thehintonguesthouse.co.uk/guest/secure?channelReference=myweb" target="_blank" rel="noopener" style="color:#FAF6EE;padding:8px 0">My booking</a>
+<a href="https://www.thehintonguesthouse.co.uk/en-GB/privacy_policy/TheHinton_WA167HH" target="_blank" rel="noopener" style="color:#FAF6EE;padding:8px 0">Privacy and cookies</a>
 </nav>
 </div>
 <div style="border-top:1px solid #25384D">
-<div style="max-width:1280px;margin:0 auto;padding:20px 32px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:14px">
+<div style="max-width:1280px;margin:0 auto;padding:24px 32px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font-size:14px">
 <span>&copy; The Hinton Guest House</span>
-<span>Another website, sorted, by Pixel North. Concept only.</span>
+<span style="display:inline-flex;align-items:center;gap:10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C48A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M17 18h1M12 18h1M7 18h1"/></svg>Another website, sorted, by Pixel North. Concept only.</span>
 </div>
 </div>
 </footer>
