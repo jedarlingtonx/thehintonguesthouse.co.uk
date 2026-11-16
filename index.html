@@ -81,6 +81,7 @@ footer>div:last-child>div{padding:18px 24px 22px !important;gap:6px !important}
 .bf-text>dl{order:5}
 }
 @media (min-width:761px){#nav a:not(:last-child){text-decoration:underline !important;text-decoration-color:transparent !important;text-decoration-thickness:2px;text-underline-offset:8px;transition:text-decoration-color .15s}#nav a:not(:last-child):hover,#nav a:not(:last-child):focus-visible{text-decoration-color:#1F4E79 !important}}
+@media (prefers-reduced-motion:no-preference){.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}}
 @media (min-width:641px){.avail{width:fit-content !important;max-width:100% !important;grid-template-columns:repeat(4,minmax(0,200px)) !important}}
 </style>
 </head>
@@ -433,5 +434,13 @@ Cheshire WA16 7HH
 </footer>
 
 </div>
+<script>
+(function(){
+if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var els=[].slice.call(document.querySelectorAll('section,footer')).filter(function(e){return !e.closest('.hero-band')&&e.getAttribute('aria-label')!=='Check availability';});
+var io=new IntersectionObserver(function(list){list.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.08,rootMargin:'0px 0px -6% 0px'});
+els.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<window.innerHeight*0.9)return;e.classList.add('rv');io.observe(e);});
+})();
+</script>
 </body>
 </html>
