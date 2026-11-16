@@ -23,14 +23,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .hero-band section{display:contents !important}
 .hero-band section>div:first-child{display:contents !important}
 .hero-img{grid-area:1/1;position:relative !important;width:100% !important;height:500px;-webkit-mask-image:none !important;mask-image:none !important}
-.hero-img img{object-position:50% 18% !important}
+.hero-img img{object-position:50% 60% !important}
 .hero-img::after{display:block !important;top:0 !important;height:auto !important;background:linear-gradient(to top,rgba(14,27,43,.94) 0,rgba(14,27,43,.7) 34%,rgba(14,27,43,0) 62%) !important}
 .hero-band h1{grid-area:1/1;align-self:end;position:relative;z-index:3;width:100%;max-width:720px;margin:0 auto 100px !important;padding:0 24px;color:#FFFFFF !important;text-shadow:0 1px 18px rgba(14,27,43,.5)}
 .hero-card{grid-area:2/1;position:relative;z-index:4;width:calc(100% - 32px);max-width:720px;margin:-64px auto 76px;background:#FFFFFF;border:1px solid #E4DAC6;border-radius:16px;padding:24px 22px;box-shadow:0 22px 40px -24px rgba(20,40,63,.5)}
 .hero-card p{margin:0 0 20px !important;font-size:16px !important}
 .hero-card>div{margin:0 !important}
 }
-@media (min-width:641px) and (max-width:1100px){.hero-img{height:540px}.hero-band h1{font-size:52px !important}.hero-card{padding:32px 36px}}
+@media (min-width:641px) and (max-width:1100px){.hero-img{height:540px}.hero-img img{object-position:50% 85% !important}.hero-band h1{font-size:52px !important}.hero-card{padding:32px 36px}}
 .burger{display:none;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid #D9CEB8;border-radius:10px;background:#FFFFFF;color:#1C2733;cursor:pointer}
 @media (max-width:760px){
 header{padding:14px 20px !important;gap:8px 12px !important}
@@ -56,6 +56,7 @@ header{padding:14px 20px !important;gap:8px 12px !important}
 @media (max-width:640px){
 h1,h2,p{text-wrap:wrap !important}
 .hero-card{width:calc(100% - 24px)}
+.hero-img{overflow:hidden}.hero-img img{transform:scale(1.32);transform-origin:22% 68%}.hero-band h1{margin-bottom:84px !important}
 .stat{border-right:0 !important;border-bottom:1px solid #E4DAC6;padding:20px 8px !important}.stat:last-child{border-bottom:0}
 .garden-main{height:280px !important}
 .hours{grid-template-columns:1fr !important;gap:2px 0 !important}.hours dd{margin-bottom:10px !important}
