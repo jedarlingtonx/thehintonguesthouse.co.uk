@@ -50,7 +50,14 @@ section[style*="padding:88px 32px 96px"],section[style*="padding:96px 32px 96px"
 section[style*="padding:80px 32px 88px"]{padding-top:48px !important;padding-bottom:56px !important}
 footer nav a,footer address+p a{padding:12px 0 !important}
 }
-@media (max-width:1000px){.bf-img{order:2}}
+@media (max-width:1000px){
+#breakfast{flex-direction:column !important;flex-wrap:nowrap !important;gap:0 !important}
+.bf-text{display:contents !important}
+.bf-text>p:nth-of-type(1){order:1}.bf-text>h2{order:2}.bf-text>p:nth-of-type(2){order:3}
+.bf-img{order:4;flex:none !important;margin:0 0 28px}
+.bf-img img{height:320px !important;min-height:0 !important}
+.bf-text>dl{order:5}
+}
 </style>
 </head>
 <body>
@@ -287,7 +294,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)})
 <div class="bf-img" style="flex:1 1 440px;min-width:0">
 <img loading="lazy" decoding="async" width="1024" height="768" src="images/breakfast-room.jpg" alt="The breakfast room, with tables laid with blue gingham cloths" style="display:block;width:100%;height:100%;min-height:380px;object-fit:cover;border-radius:8px;background:#E8DFCE">
 </div>
-<div style="flex:1 1 440px;min-width:0">
+<div class="bf-text" style="flex:1 1 440px;min-width:0">
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Breakfast</p>
 <h2 style="margin:0 0 18px;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-0.015em;text-wrap:balance">Pre-ordered, and served in our breakfast room.</h2>
 <p style="margin:0 0 22px;color:#3B4856;text-wrap:pretty">Choose a full English or Irish, a continental or a lighter healthy breakfast. Vegetarian, vegan and gluten-free options are available, and there is a children's menu.</p>
