@@ -18,10 +18,19 @@ a{color:#8E3B2C}a:hover{color:#5F2418}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1F4E79;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (max-width:640px){h1{font-size:42px !important}h2{font-size:32px !important}}
-@media (max-width:1100px){.hero-band{display:flex;flex-direction:column}.hero-band section{width:100%;padding-bottom:40px !important}.hero-band section>div{padding:16px 0 !important}.hero-img{order:2;position:static !important;width:100% !important;-webkit-mask-image:none !important;mask-image:none !important;padding:0 32px 8px}.hero-img img{height:auto !important;aspect-ratio:1000/834;border-radius:6px 120px 6px 6px !important}}
+@media (max-width:1100px){.hero-band{display:flex;flex-direction:column}.hero-band section{width:100%;padding-bottom:40px !important}.hero-band section>div{padding:16px 0 !important}.hero-img{order:2;position:static !important;width:100% !important;-webkit-mask-image:none !important;mask-image:none !important;padding:0 32px 64px}.hero-img img{height:auto !important;aspect-ratio:1000/834;border-radius:6px 120px 6px 6px !important}}
 .hero-img::after{content:"";position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(to top,#FAF6EE,rgba(250,246,238,0))}
 @media (max-width:1100px){.hero-img::after{display:none}}
 .hero-img{-webkit-mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.35) 18%,#000 48%);mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.35) 18%,#000 48%)}
+@media (max-width:640px){
+.stat{border-right:0 !important;border-bottom:1px solid #E4DAC6;padding:20px 8px !important}.stat:last-child{border-bottom:0}
+.garden-main{height:280px !important}
+.hours{grid-template-columns:1fr !important;gap:2px 0 !important}.hours dd{margin-bottom:10px !important}
+.gtk{padding:28px 22px 32px !important}
+section[style*="padding:88px 32px 96px"],section[style*="padding:96px 32px 96px"]{padding-top:56px !important;padding-bottom:64px !important}
+section[style*="padding:80px 32px 88px"]{padding-top:48px !important;padding-bottom:56px !important}
+footer nav a,footer address+p a{padding:12px 0 !important}
+}
 </style>
 </head>
 <body>
@@ -116,22 +125,22 @@ sync();
 <div style="background:#FFFFFF;margin-top:56px;border-top:1px solid #E4DAC6;border-bottom:1px solid #E4DAC6">
 <section aria-label="Guest ratings and awards" style="max-width:1280px;margin:0 auto;padding:40px 32px">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:0;border-top:1px solid #D9CEB8;border-bottom:1px solid #D9CEB8">
-<div style="padding:26px 24px;border-right:1px solid #E4DAC6">
+<div class="stat" style="padding:26px 24px;border-right:1px solid #E4DAC6">
 <div style="margin-bottom:10px;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:#5A6673">Guest reviews</div>
 <div style="font-family:'Fraunces',Georgia,serif;font-size:44px;line-height:1;color:#8E3B2C">4.9<span style="font-size:22px;color:#5A6673"> / 5</span></div>
 <div style="margin-top:8px;font-size:15px;color:#3B4856">Guest recommended</div>
 </div>
-<div style="padding:26px 24px;border-right:1px solid #E4DAC6">
+<div class="stat" style="padding:26px 24px;border-right:1px solid #E4DAC6">
 <div style="margin-bottom:10px;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:#5A6673">Booking.com</div>
 <div style="font-family:'Fraunces',Georgia,serif;font-size:44px;line-height:1;color:#8E3B2C">9.6</div>
 <div style="margin-top:8px;font-size:15px;color:#3B4856">Guest review score</div>
 </div>
-<div style="padding:26px 24px;border-right:1px solid #E4DAC6">
+<div class="stat" style="padding:26px 24px;border-right:1px solid #E4DAC6">
 <div style="margin-bottom:10px;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:#5A6673">TripAdvisor</div>
 <div style="font-family:'Fraunces',Georgia,serif;font-size:34px;line-height:1;color:#8E3B2C">Travellers' Choice</div>
 <div style="margin-top:8px;font-size:15px;color:#3B4856">Every year since 2014</div>
 </div>
-<div style="padding:26px 24px">
+<div class="stat" style="padding:26px 24px">
 <div style="margin-bottom:10px;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:#5A6673">AA</div>
 <div style="font-family:'Fraunces',Georgia,serif;font-size:34px;line-height:1;color:#8E3B2C">Four Star</div>
 <div role="img" aria-label="Four stars" style="display:flex;gap:4px;margin-top:8px"><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg width="30" height="30" viewBox="0 0 24 24" fill="#C98F1A" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
@@ -231,7 +240,7 @@ sync();
 </div>
 <div style="display:flex;flex-wrap:wrap;gap:16px">
 <div style="flex:2 1 520px;min-width:0">
-<img loading="lazy" decoding="async" width="1024" height="768" src="images/garden-gazebo.jpg" alt="The garden gazebo and lawned borders at the back of the house" style="display:block;width:100%;height:472px;object-fit:cover;border-radius:8px;background:#E8DFCE">
+<img class="garden-main" loading="lazy" decoding="async" width="1024" height="768" src="images/garden-gazebo.jpg" alt="The garden gazebo and lawned borders at the back of the house" style="display:block;width:100%;height:472px;object-fit:cover;border-radius:8px;background:#E8DFCE">
 </div>
 <div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:16px">
 <img loading="lazy" decoding="async" width="1024" height="768" src="images/garden-deckchairs.jpg" alt="Deckchairs on the lawn in front of the gazebo" style="display:block;width:100%;height:228px;object-fit:cover;border-radius:8px;background:#E8DFCE">
@@ -251,7 +260,7 @@ sync();
 <p style="margin:0 0 16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#8E3B2C">Breakfast</p>
 <h2 style="margin:0 0 18px;font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-0.015em;text-wrap:balance">Pre-ordered, and served in our breakfast room.</h2>
 <p style="margin:0 0 22px;color:#3B4856;text-wrap:pretty">Choose a full English or Irish, a continental or a lighter healthy breakfast. Vegetarian, vegan and gluten-free options are available, and there is a children's menu.</p>
-<dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;border-top:1px solid #D9CEB8;padding-top:20px">
+<dl class="hours" style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;border-top:1px solid #D9CEB8;padding-top:20px">
 <dt style="font-weight:700">Monday to Friday</dt><dd style="margin:0;color:#3B4856">7am to 9am</dd>
 <dt style="font-weight:700">Weekends and bank holidays</dt><dd style="margin:0;color:#3B4856">8am to 10am</dd>
 </dl>
@@ -261,7 +270,7 @@ sync();
 
 <div style="background:#E3ECF4">
 <section aria-label="Good to know" style="max-width:1280px;margin:0 auto;padding:80px 32px 88px">
-<div style="background:#FFFFFF;border:1px solid #C9D7E5;border-radius:12px;padding:40px 40px 44px">
+<div class="gtk" style="background:#FFFFFF;border:1px solid #C9D7E5;border-radius:12px;padding:40px 40px 44px">
 <h2 style="margin:0 0 28px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:28px">Good to know before you arrive</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:28px 36px">
 <div style="display:flex;gap:16px;align-items:flex-start"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3 style="margin:0 0 6px;font-size:17px;font-weight:700">Check-in</h3><p style="margin:0;font-size:16px;color:#3B4856">4pm to 9pm. Early check-in can be arranged, but we are sorry that we cannot offer late arrivals.</p></div></div>
