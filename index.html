@@ -19,15 +19,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (max-width:640px){h1{font-size:42px !important}h2{font-size:32px !important}}
 @media (max-width:1100px){
-.hero-band{display:flex;flex-direction:column;padding-top:40px}
+.hero-band{display:grid;grid-template-columns:minmax(0,1fr);padding-top:0}
 .hero-band section,.hero-band section>div:first-child{display:contents !important}
-.hero-band h1{order:1;margin:0 32px 18px !important}
-.hero-band section p{order:3;margin:20px 32px 0 !important}
-.hero-img{order:2;position:static !important;width:100% !important;height:320px;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 28%);mask-image:linear-gradient(to bottom,transparent 0,#000 28%)}
-.hero-img img{object-position:60% center !important}
-.hero-img::after{display:none}
-.hero-band section>div>div{order:4;margin:24px 32px 76px !important}
+.hero-band h1{grid-row:1;grid-column:1;z-index:2;align-self:start;margin:36px 32px 0 !important}
+.hero-img{grid-row:1;grid-column:1;z-index:1;position:relative !important;width:100% !important;min-height:500px;-webkit-mask-image:none !important;mask-image:none !important}
+.hero-img img{position:absolute;inset:0;object-position:42% bottom !important}
+.hero-img::after{display:block !important;height:100% !important;background:linear-gradient(to bottom,#FAF6EE 0,rgba(250,246,238,.92) 34%,rgba(250,246,238,.4) 54%,rgba(250,246,238,0) 72%) !important}
+.hero-band section p{grid-row:2;margin:24px 32px 0 !important}
+.hero-band section>div>div{grid-row:3;margin:24px 32px 76px !important}
 }
+@media (min-width:641px) and (max-width:1100px){.hero-img{min-height:560px}.hero-img img{object-position:50% 40% !important}.hero-band h1{margin-top:48px !important}}
 .burger{display:none;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid #D9CEB8;border-radius:10px;background:#FFFFFF;color:#1C2733;cursor:pointer}
 @media (max-width:760px){
 header{padding:14px 20px !important}
