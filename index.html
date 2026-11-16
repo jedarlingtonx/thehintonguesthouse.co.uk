@@ -50,7 +50,14 @@ h1,h2,p{text-wrap:wrap !important}
 .gtk{padding:28px 22px 32px !important}
 section[style*="padding:88px 32px 96px"],section[style*="padding:96px 32px 96px"]{padding-top:56px !important;padding-bottom:64px !important}
 section[style*="padding:80px 32px 88px"]{padding-top:48px !important;padding-bottom:56px !important}
-footer nav a,footer address+p a{padding:12px 0 !important}
+footer>div:first-child{gap:26px !important;padding:40px 24px 28px !important}
+footer>div:first-child>div:first-child p{margin-top:12px !important}
+footer address{margin-bottom:6px !important}
+footer address+p{gap:0 !important}
+footer nav{gap:0 24px !important}
+footer nav a,footer address+p a{padding:10px 0 !important}
+footer>div:last-child>div{padding:18px 24px 22px !important;gap:6px !important}
+.credit{flex-direction:column;gap:6px !important;text-align:center;text-wrap:balance}
 }
 @media (max-width:1000px){
 #breakfast{flex-direction:column !important;flex-wrap:nowrap !important;gap:0 !important}
@@ -403,7 +410,7 @@ Cheshire WA16 7HH
 <div style="border-top:1px solid #25384D">
 <div style="max-width:1280px;margin:0 auto;padding:24px 32px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font-size:14px">
 <span>&copy; The Hinton Guest House</span>
-<span style="display:inline-flex;align-items:center;gap:10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C48A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M17 18h1M12 18h1M7 18h1"/></svg>Another website, sorted, by Pixel North. Concept only.</span>
+<span class="credit" style="display:inline-flex;align-items:center;gap:10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3C48A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M17 18h1M12 18h1M7 18h1"/></svg>Another website, sorted, by Pixel North. Concept only.</span>
 </div>
 </div>
 </footer>
